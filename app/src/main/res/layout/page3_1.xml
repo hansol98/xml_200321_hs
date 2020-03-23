@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="13dp"
+    android:paddingStart="13dp"
+    android:paddingRight="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="#70808080"
+    android:id="@+id/list_header">
+
+    // 타이틀 헤어 부분
+    // 수도권, 충청권 등등
+    <TextView
+        android:id="@+id/titleHeader_page3_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:gravity="center_vertical"/>
+
+    // 리스트 확장 아이콘
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/circle_plus"
+        android:layout_weight="0"/>
+</LinearLayout>

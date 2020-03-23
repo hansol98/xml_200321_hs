@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            // 스케줄 등록 아이콘
+            <ImageButton
+                android:id="@+id/icon_page3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/cardview_no_img"/>
+
+            // 로고
+            <ImageButton
+                android:id="@+id/logo_page3"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@drawable/cardview_no_img"/>
+
+            // 마이페이지 아이콘
+            <ImageButton
+                android:id="@+id/myPg_page3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/cardview_no_img"/>
+        </LinearLayout>
+
+        // 타이틀
+        <TextView
+            android:id="@+id/title_page3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="관광지 전체보기"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        // 맵 뷰 띄우기
+        <RelativeLayout
+            android:id="@+id/mapView_page3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:background="#F888"/>
+    </LinearLayout>
+</LinearLayout>

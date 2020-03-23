@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            // 스케줄 등록 아이콘
+            <ImageButton
+                android:id="@+id/icon_page3_1_x_x"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/cardview_no_img"/>
+
+            // 로고
+            <ImageButton
+                android:id="@+id/logo_page3_1_x_x"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@drawable/cardview_no_img"/>
+
+            // 마이페이지 아이콘
+            <ImageButton
+                android:id="@+id/myPg_page3_1_x_x"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/cardview_no_img"/>
+
+        </LinearLayout>
+
+        // 관광지 이름
+        <TextView
+            android:id="@+id/title_page3_1_x_x"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="관광지 이름"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        // 관광지 대표 이미지
+        <ImageView
+            android:id="@+id/image_page3_1_x_x"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:src="@drawable/cardview_no_img"/>
+
+        // 관광지 정보
+        <TextView
+            android:id="@+id/detail_page3_1_x_x"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="관광지 상세정보"/>
+
+        // 관광지 위치 정보 맵뷰
+        <RelativeLayout
+            android:id="@+id/mapView_page3_1_x_x"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#f888"/>
+    </LinearLayout>
+</LinearLayout>

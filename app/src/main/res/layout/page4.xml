@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            // 관광지 보기 버튼
+            <ImageButton
+                android:id="@+id/icon_page4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/cardview_no_img"/>
+
+            // 로고
+            <ImageButton
+                android:id="@+id/logo_page4"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@drawable/cardview_no_img"/>
+
+            // 마이페이지 버튼
+            <ImageButton
+                android:id="@+id/myPg_page4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/cardview_no_img"/>
+        </LinearLayout>
+
+        // 타이틀
+        <TextView
+            android:id="@+id/title_page4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="여행스케쥴 짜기"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="bottom"/>
+
+        // 타이틀 세부 내용
+        <TextView
+            android:id="@+id/detail_page4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="방문 도시를 입력하면 최적의 경로를 추천해 드립니다."
+            android:textColor="#808080"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            // 출발 날짜
+            <TextView
+                android:id="@+id/depDate_page4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="출발 날짜:"
+                android:gravity="center_vertical"/>
+
+            // 출발 날짜 받아오기
+            <EditText
+                android:id="@+id/entDate_page4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="false"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            // 이용권 텍스트
+            <TextView
+                android:id="@+id/days_page4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="이용권:"
+                android:gravity="center_vertical"/>
+
+            // 이용권 받아오기
+            <EditText
+                android:id="@+id/entDays_page4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="false"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            // 출발역 텍스트
+            <TextView
+                android:id="@+id/depStation_page4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="출발역:"
+                android:gravity="center_vertical"/>
+
+            // 출발역 받아오기
+            <EditText
+                android:id="@+id/entStation_page4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="false"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+
+            // 도착역 텍스트
+            <TextView
+                android:id="@+id/desStation_page4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="도착역:"
+                android:gravity="center_vertical"/>
+
+            // 도착역 받아오기
+            <EditText
+                android:id="@+id/entDesStation_page4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="false"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            // 선택한 도시 띄우기
+            <TextView
+                android:id="@+id/selectCity_page4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="선택도시"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:background="#808080"/>
+
+            // 사용자가 입력한 도시
+            <TextView
+                android:id="@+id/selectedCities_page4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"/>
+        </LinearLayout>
+
+        //웹뷰
+        <RelativeLayout
+            android:id="@+id/webView_page4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:background="#8888">
+
+            // 검색기능
+            <AutoCompleteTextView
+                android:id="@+id/searchStation_page4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:completionThreshold="1"
+                android:dropDownHeight="100dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+
+            // 경로 최적화 텍스트 이미지
+            // 클릭가능
+            <TextView
+                android:id="@+id/buttonOK_page4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="경로 최적화"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:background="#ffffff"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
